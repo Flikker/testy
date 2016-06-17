@@ -73,14 +73,16 @@
 	</action>
     
     <action name="scanaction">
-     js(window.onload = startScanning()); 
+      jsget(checkpliscan, 'pleaseletit');
+        copy(thecheckscan, get(checkpliscan));
+    if(thecheckscan == "0", js(startScanning()), delayedcall(1, scanaction()))
     </action>
     
     
     <action name="getthebeacchecker">
         jsget(checkpli, 'pleaseletit');
         copy(thecheck, get(checkpli));
-    if(thecheck !== null, getthebeac(), delayedcall(1, getthebeacchecker());)        
+    if(thecheck !== "0", getthebeac(); startScanning(), delayedcall(1, getthebeacchecker());)        
     </action>
     
     

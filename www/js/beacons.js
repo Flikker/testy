@@ -1,4 +1,4 @@
-var pleaseletit;
+var pleaseletit = "0";
 
 function logThis(thetexty) {
     
