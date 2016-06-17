@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>krpano - pano3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<style>
+		@-ms-viewport { width:device-width; }
+		@media only screen and (min-device-width:800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+	</style>
+     <script type="text/javascript" src="../../cordova.js"></script>
+        <script type="text/javascript" src="../../js/index.js"></script>
+        <script type="text/javascript" src="../../js/beacons.js"></script>
+</head>
+<body>
+
+<script src="tour.js"></script>
+   
+
+<div id="pano" style="width:100%;height:50%;">
+	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+	<script>
+        
+        
+          function krpanoReady(krpano)
+    {
+        krpano.call("showlog()");
+         krpano.call("trace(krpano is ready...)");
+         window.onload = krpano.call("getthebeac()");
+    }
+        
+      function  trythisNow() {
+         
+            document.getElementById('butty2').innerHTML = pleasey;
+        }
+        
+        
+        
+		embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"prefer", mobilescale:1.0, passQueryParameters:true, onready:krpanoReady});
+        
+    
+     
+    
+  
+	</script>
+</div>
+     <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device it is Ready</p>
+            </div>
+            <div id="bluetoothalert" >
+               Null
+            </div>
+            <div id="startedalert" >
+               Null
+            </div>
+            <div id="beaconalert" >
+               Null
+            </div>
+            <div id="beaconalertrange">
+               Null
+            </div>
+            <div id="beaconalertmajor" >
+               Null
+            </div>
+     <button type="button" id="butty2" onclick="trythisNow();">Click Me!</button>
+          
+      <script type="text/javascript" src="www/js/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="www/js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="www/js/index.js"></script>
+        <script type="text/javascript" src="www/js/searchtours.js"></script>
+        <script type="text/javascript" src="www/js/downloader.js"></script>
+         <script type="text/javascript" src="www/js/database.js"></script>
+        <script type="text/javascript" src="www/js/eventlisten.js"></script>
+         <script type="text/javascript" src="www/js/beacons.js"></script>
+        
+
+</body> 
+</html>
