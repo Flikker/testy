@@ -76,6 +76,13 @@
      js(window.onload = startScanning()); 
     </action>
     
+    
+    <action name="getthebeacchecker">
+        jsget(checkpli, 'pleaseletit');
+    if(get(checkpli) !== null, getthebeac(), delayedcall(1, getthebeacchecker());)        
+    </action>
+    
+    
     <action name="getthebeac">
         jsget(pood, 'pleaseletit');
     set(layer[factbox].html, get(pood));
