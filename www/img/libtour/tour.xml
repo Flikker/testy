@@ -79,7 +79,8 @@
     
     <action name="getthebeacchecker">
         jsget(checkpli, 'pleaseletit');
-    if(get(checkpli) !== null, getthebeac(), delayedcall(1, getthebeacchecker());)        
+        copy(thecheck, get(checkpli));
+    if(thecheck !== null, getthebeac(), delayedcall(1, getthebeacchecker());)        
     </action>
     
     
