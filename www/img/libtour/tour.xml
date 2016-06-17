@@ -72,17 +72,12 @@
 		if(startactions !== null, startactions() );
 	</action>
     
-    <action name="scanaction">
-      jsget(checkpliscan, 'pleaseletit');
-        copy(thecheckscan, get(checkpliscan));
-    if(thecheckscan == "0", js(startScanning()), delayedcall(1, scanaction()))
-    </action>
-    
+ 
     
     <action name="getthebeacchecker">
         jsget(checkpli, 'pleaseletit');
         copy(thecheck, get(checkpli));
-    if(thecheck !== "0", getthebeac(); startScanning(), delayedcall(1, getthebeacchecker());)        
+    if(thecheck !== "undefined", getthebeac(); js(startScanning()), delayedcall(1, getthebeacchecker());)        
     </action>
     
     
